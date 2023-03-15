@@ -25,6 +25,7 @@ local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
 
 SpectatePlayerGui.Name = "SpectatePlayerGui"
 SpectatePlayerGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SpectatePlayerGui.Enabled = true
 SpectatePlayerGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 SpectatePlayerGui.ResetOnSpawn = false
 
@@ -124,7 +125,7 @@ UIAspectRatioConstraint_6.AspectRatio = 10.000
 
 -- Scripts:
 
-local function PCXK_fake_script() -- Frame_2.LocalScript 
+local function VUBWFGT_fake_script() -- Frame_2.LocalScript 
 	local script = Instance.new('LocalScript', Frame_2)
 
 	local bin = script.Parent
@@ -148,13 +149,12 @@ local function PCXK_fake_script() -- Frame_2.LocalScript
 		camera.CameraSubject = players.LocalPlayer:WaitForChild("Character"):WaitForChild("Humanoid")
 	end)
 end
-coroutine.wrap(PCXK_fake_script)()
-local function HVTTIGP_fake_script() -- Frame.LocalScript 
+coroutine.wrap(VUBWFGT_fake_script)()
+local function SHBNN_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Exit.MouseButton1Click:Connect(function()
-		workspace.CurrentCamera.CameraSubject = game:GetService("Players").LocalPlayer:WaitForChild("Character"):WaitForChild("Humanoid")
 		script.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(HVTTIGP_fake_script)()
+coroutine.wrap(SHBNN_fake_script)()
